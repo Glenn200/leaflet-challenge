@@ -1,1 +1,2 @@
 # leaflet-challenge
+Initial setup
