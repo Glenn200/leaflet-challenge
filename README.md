@@ -8,3 +8,5 @@ Data markers reflect the magnitude of the earthquake in their size and color
 Earthquakes with higher magnitudes appear larger and darker in color
 Including popups that provide additional information about the earthquake when a marker is clicked
 Creating a legend that provides context for a map data
+
+Published to Git.IO - https://glenn200.github.io/leaflet-challenge/
