@@ -42,14 +42,18 @@ function createFeatures(earthquakeData) {
 function chooseColor(mag) {
   // console.log(mag)
   switch(true) {
-      case (1.0 <= mag && mag <= 2.5):
+      case (1.0 <= mag && mag <= 2.0):
         return "#35BC00";
-      case (2.5 <= mag && mag <= 4.0):
+      case (2.0 <= mag && mag <= 3.0):
+          return "#00b9c3";
+      case (3.0 <= mag && mag <= 4.0):
         return "#0071BC";
-      case (4.0 <= mag && mag <= 5.5):
+      case (4.0 <= mag && mag <= 5.0):
         return "#BCBC00";
-      case (5.5 <= mag && mag <= 7.0):
+      case (5.0 <= mag && mag <= 6.0):
         return "#BC3500";
+      case (6.0 <= mag && mag <= 7.0):
+        return "#fe00b8";
       case (7.0 <= mag && mag <= 15.0):
         return "#BC0000";
       default:
@@ -61,7 +65,7 @@ var legend = L.control({position: 'bottomright'});
 
 legend.onAdd = function (map) {
     var div = L.DomUtil.create('div', 'info legend'),
-        grades = [1.0, 2.0, 4.0, 5.0, 7.0],
+        grades = [1.0, 2.0,3.0, 4.0, 5.0, 6.0, 7.0],
         labels = [];
 
     // loop through density intervals to generate label
